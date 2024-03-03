@@ -1,0 +1,13 @@
+{
+    "name": "pisosjs",
+    "version": "1.0.0",
+    "description": "Descripción de tu proyecto",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mssql": "^7.3.5"
+    }
+}
