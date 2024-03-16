@@ -19,7 +19,7 @@ const config = {
 app.get('/pisos', async (req, res) => {
     try {
         await sql.connect(config);
-        const result = await sql.query`EXEC SP_PresupuestosPendientes 1, '2024-02-06', '2024-02-07'`;
+        const result = await sql.query`EXEC SP_PresupuestosPendientes 1, '2024-02-01', '2024-02-29'`;
         console.log(result);
         res.json(result); // Sending result as JSON response
     } catch (err) {
